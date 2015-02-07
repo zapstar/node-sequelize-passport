@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Passport-Local Example</title>
+	</head>
+	<body>
+		<% if (!user) { %> <!-- User has not logged in -->
+			<p>
+			<a href="/">Home</a> |
+			<a href="/login">Log In</a> |
+			<a href="/register">Register</a>
+			</p>
+		<% } else { %> <!-- User has logged in -->
+			<p>
+			<a href="/">Home</a> |
+			<a href="/account">Account</a> |
+			<a href="/logout">Log Out</a>
+			</p>
+		<% } %>

@@ -1,0 +1,24 @@
+<% include header %>
+	<div> <!-- DIV for flash message from connect-flash -->
+		<% if (message) { %>
+		<p><%= message %></p>
+		<% } %>
+	</div>
+	<form action="/register" method="post">
+		<div>
+			<label>Name:</label>
+			<input type="text" name="fullName"/><br/>
+		</div>
+		<div>
+			<label>Username:</label>
+			<input type="text" name="username"/><br/>
+		</div>
+		<div>
+			<label>Password:</label>
+			<input type="password" name="password"/>
+		</div>
+		<div>
+			<input type="submit" value="Sign Up"/>
+		</div>
+	</form>
+<% include footer %>
