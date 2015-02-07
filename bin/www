@@ -25,8 +25,8 @@ var server = http.createServer(app);
 var models = require('../models');
 models
   .sequelize
-  .sync({ force: true }) // wipe out the entire database
-  //.sync() // just sync model and the database
+  //.sync({ force: true }) // !!!CAUTION: wipe out the entire database
+  .sync() // use this instead, just sync model and the database
   .then(function() {
     // Sync succeeded
     // Start listening on this port
