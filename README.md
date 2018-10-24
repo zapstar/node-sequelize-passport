@@ -1,4 +1,5 @@
 # Node.js, Express.js, Sequelize.js and Passport.js Boilerplate
+
 Boilerplate to get started with Node.js, Express, Sequelize and Passport.js.
 
 User Registration and authentication example.
